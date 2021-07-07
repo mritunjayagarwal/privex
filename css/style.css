@@ -1,43 +1,11 @@
-/******************************************************************
-  Template Name: Hazze
-  Description: Manup Fashion HTML Template
-  Author: Colorlib
-  Author URI: http://colorlib.com
-  Version: 1.0
-  Created: Colorlib
-******************************************************************/
-
-/*------------------------------------------------------------------
-[Table of contents]
-
-1.  Template default CSS
-	1.1	Variables
-	1.2	Mixins
-	1.3	Flexbox
-	1.4	Reset
-2.  Helper Css
-3.  Header Section
-4.  Hero Section
-5.  Services Section
-6.  Portfolio Section
-7.  Tetimonial Section
-8.  Member Section
-9.  Contact
-10.  Footer Style
-
--------------------------------------------------------------------*/
-
-/*----------------------------------------*/
-
-/* Template default CSS
-/*----------------------------------------*/
+@import url(https://fonts.googleapis.com/css?family=Exo+2:200i);
 
 :root {
 	/* Base font size */
 	font-size: 10px;   
 	
 	/* Set neon color */
-	--neon-text-color: red;
+	--neon-text-color: #FF69B4;
   }
 
 html,
@@ -1675,6 +1643,7 @@ ol {
 /*PRIVEX logo Neon */
 
 #symbol {
+	font-family: 'Exo 2', sans-serif;
 	font-style: italic;
 	color: #fff;
 	text-transform: uppercase;
@@ -1697,32 +1666,32 @@ ol {
   
   /* Animate neon flicker */
   @keyframes flicker {
-	  
-	  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
-		
-		  text-shadow:
-			  -0.2rem -0.2rem 1rem #fff,
-			  0.2rem 0.2rem 1rem #fff,
-			  0 0 2rem var(--neon-text-color),
-			  0 0 4rem var(--neon-text-color),
-			  0 0 6rem var(--neon-text-color),
-			  0 0 8rem var(--neon-text-color),
-			  0 0 10rem var(--neon-text-color);
-		  
-		  box-shadow:
-			  0 0 .5rem #fff,
-			  inset 0 0 .5rem #fff,
-			  0 0 2rem var(--neon-border-color),
-			  inset 0 0 2rem var(--neon-border-color),
-			  0 0 4rem var(--neon-border-color),
-			  inset 0 0 4rem var(--neon-border-color);        
-	  }
-	  
-	  20%, 24%, 55% {        
-		  text-shadow: none;
-		  box-shadow: none;
-	  }    
-  }
+    
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+      
+        text-shadow:
+            -0.2rem -0.2rem 1rem #d3d3d3,
+            0.1rem 0.1rem 1rem #d3d3d3,
+            0 0 2rem var(--neon-text-color),
+            0 0 4rem var(--neon-text-color),
+            0 0 6rem var(--neon-text-color),
+            0 0 8rem var(--neon-text-color),
+            0 0 10rem var(--neon-text-color);
+        
+        box-shadow:
+            0 0 .1rem #fff,
+            inset 0 0 .5rem #fff,
+            0 0 1rem var(--neon-border-color),
+            inset 0 0 2rem var(--neon-border-color),
+            0 0 1rem var(--neon-border-color),
+            inset 0 0 1rem var(--neon-border-color);        
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+        box-shadow: none;
+    }    
+}
 
 /*-------------------------------- Respinsive Media Styles --------------------------------*/
 
