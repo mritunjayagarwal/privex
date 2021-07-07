@@ -386,7 +386,8 @@ ol {
 -----------------------*/
 
 .about-us-section {
-	background: #191919;
+	background: url('../img/buy.png');
+	background-size: cover;
 }
 
 .as-pic img {
