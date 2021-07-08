@@ -134,6 +134,7 @@ ol {
 }
 
 .set-bg {
+	background: url('../img/swap.png');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: top center;
@@ -1699,6 +1700,24 @@ ol {
 }
 
 @media only screen and (max-width: 991px) {
+	
+	.set-bg{
+		background: linear-gradient(-45deg, #005ea1, #e73c7e, #23a6d5, #23d5ab);
+		background-size: 400% 400%;
+		animation: gradient 15s ease infinite;
+	}
+
+	@keyframes gradient {
+		0% {
+			background-position: 0% 50%;
+		}
+		50% {
+			background-position: 100% 50%;
+		}
+		100% {
+			background-position: 0% 50%;
+		}
+	}
 	.as-text {
 		padding-left: 0;
 	}
@@ -1729,7 +1748,7 @@ ol {
 	.slicknav_btn {
 		margin: 0;
 		border-radius: 0;
-		background-color: #666;
+		background-color: transparent;
 		position: absolute;
 		right: 15px;
 		top: 20px;
@@ -1816,6 +1835,8 @@ ol {
 /* Small Mobile: 320px */
 
 @media only screen and (max-width: 479px) {
+
+
 	.blog-hero-section .bh-text h2 {
 		font-size: 36px;
 		line-height: normal;
