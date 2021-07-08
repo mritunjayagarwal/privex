@@ -1701,9 +1701,34 @@ ol {
 }
 
 @media only screen and (max-width: 991px) {
+
+	#swap-head{
+		font-size: 35px;
+		text-align: center;
+		color: #fff
+	}
+
+	p.f-para{
+		margin-top: 30px;
+		font-size: 15px;
+		text-align: justify;
+		color: #fff;
+		font-weight: unset;
+	}
+
+	.swap-button{
+		display: block;
+		margin-bottom: 35px;
+		margin-top: 30px;
+		font-weight: unset;
+	}
+
+	.hero-section{
+		padding-top: 80px;
+	}
 	
 	.set-bg{
-		background: linear-gradient(-45deg, #005ea1, #e73c7e, #23a6d5, #23d5ab);
+		background: linear-gradient(-45deg, #181818, #121212, #e32879, #e73c7e);
 		background-size: 400% 400%;
 		animation: gradient 15s ease infinite;
 	}
