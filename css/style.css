@@ -14,6 +14,7 @@ body {
 	font-family: "Libre Franklin", sans-serif;
 	-webkit-font-smoothing: antialiased;
 	font-smoothing: antialiased;
+	background: #181818;
 }
 
 h1,
@@ -110,6 +111,7 @@ ol {
 }
 
 .set-bg {
+	background: url("../img/3.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: top center;
