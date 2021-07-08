@@ -446,7 +446,7 @@ ol {
 	text-align: center;
 	background: #222222;
 	padding: 46px 50px 0;
-	height: 325px;
+	height: 350px;
 	-webkit-transition: all 0.3s;
 	-o-transition: all 0.3s;
 	transition: all 0.3s;
@@ -455,6 +455,7 @@ ol {
 
 .service-item:hover {
 	border-bottom: 3px solid #e32879;
+	margin-top: -10px;
 }
 
 .service-item h4 {
