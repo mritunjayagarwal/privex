@@ -1,3 +1,31 @@
+/******************************************************************
+  Template Name: Hazze
+  Description: Manup Fashion HTML Template
+  Author: Colorlib
+  Author URI: http://colorlib.com
+  Version: 1.0
+  Created: Colorlib
+******************************************************************/
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+1.  Template default CSS
+	1.1	Variables
+	1.2	Mixins
+	1.3	Flexbox
+	1.4	Reset
+2.  Helper Css
+3.  Header Section
+4.  Hero Section
+5.  Services Section
+6.  Portfolio Section
+7.  Tetimonial Section
+8.  Member Section
+9.  Contact
+10.  Footer Style
+
+-------------------------------------------------------------------*/
 
 /*----------------------------------------*/
 
@@ -11,7 +39,6 @@ body {
 	-webkit-font-smoothing: antialiased;
 	font-smoothing: antialiased;
 	background: #181818;
-	scroll-behavior: smooth;
 }
 
 h1,
@@ -442,22 +469,26 @@ ol {
 	padding-bottom: 80px;
 }
 
-.service-item {
-	text-align: center;
+.service-item, .youtube-item {
 	background: #222222;
 	padding: 46px 50px 0;
-	height: 325px;
+	height: 220px;
 	-webkit-transition: all 0.3s;
 	-o-transition: all 0.3s;
 	transition: all 0.3s;
 	margin-bottom: 30px;
 }
 
-.service-item:hover {
-	border-bottom: 3px solid #e32879;
+.youtube-item{
+    background: #e32879;
+    height: 150px;
 }
 
-.service-item h4 {
+.service-item:hover {
+	border: 3px solid #e32879;
+}
+
+.service-item h4, .youtube-item h4 {
 	font-size: 22px;
 	color: #ffffff;
 	font-weight: 700;
@@ -1674,6 +1705,11 @@ ol {
 }
 
 @media only screen and (max-width: 991px) {
+
+	.service-item{
+		height: auto;
+		padding-bottom: 20px;
+	}
 
 	#swap-head{
 		font-size: 35px;
