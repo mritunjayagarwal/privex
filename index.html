@@ -91,8 +91,8 @@
             <div class="row">
                 <div class="col-lg-2 col-md-2">
                     <div class="logo">
-                        <a href="#">
-                            <img src="img/logo.png" id = "" style = "width: 110px;height: auto;margin-top: -15px;" alt="">
+                        <a href="./index.html">
+                            <img src="img/logo.png" id = "" style = "width: 120px;height: auto;margin-top: -15px;" alt="">
                         </a>
                     </div>
                 </div>
@@ -337,7 +337,7 @@
 
     <!-- Footer Section Start -->
    <!-- Remove the container if you want to extend the Footer to full width. -->
-<div class="my-5">
+   <div class="my-5">
     <!-- Footer -->
     <footer class="text-center text-white" style="background-color: #e32879">
       <!-- Grid container -->
@@ -349,41 +349,31 @@
             <!-- Grid column -->
             <div class="col-md-2">
               <h6 class="text-uppercase font-weight-bold mb-5">
-                <a href="#!" class="text-white">BUY</a>
+                <a href="./buyorswap.html#buy" class="text-white">BUY</a>
               </h6>
             </div>
             <!-- Grid column -->
   
             <!-- Grid column -->
             <div class="col-md-2">
-              <h6 class="text-uppercase font-weight-bold mb-5">
-                <a href="#!" class="text-white">CONNECT WALLET</a>
-              </h6>
-            </div>
+                <h6 class="text-uppercase font-weight-bold mb-5">
+                  <a href="./buyorswap.html" class="text-white">Swap</a>
+                </h6>
+              </div>
             <!-- Grid column -->
   
             <!-- Grid column -->
             <div class="col-md-2">
               <h6 class="text-uppercase font-weight-bold mb-5">
-                <a href="#!" class="text-white">ABOUT US</a>
+                <a href="./about.html" class="text-white">ABOUT US</a>
               </h6>
             </div>
-            <!-- Grid column -->
-  
             <!-- Grid column -->
             <div class="col-md-2">
-              <h6 class="text-uppercase font-weight-bold mb-5">
-                <a href="#!" class="text-white">Help</a>
-              </h6>
-            </div>
-            <!-- Grid column -->
-  
-            <!-- Grid column -->
-            <div class="col-md-2">
-              <h6 class="text-uppercase font-weight-bold mb-5">
-                <a href="#!" class="text-white">Contact</a>
-              </h6>
-            </div>
+                <h6 class="text-uppercase font-weight-bold mb-5">
+                  <a href="./buyorswap.html#buy-section" class="text-white">CONNECT WALLET</a>
+                </h6>
+              </div>
             <!-- Grid column -->
           </div>
           <!-- Grid row-->
@@ -414,16 +404,10 @@
             <i class="fab fa-twitter"></i>
           </a>
           <a href="" class="text-white me-4 mr-4">
-            <i class="fab fa-google"></i>
+            <i class="fab fa-telegram"></i>
           </a>
           <a href="" class="text-white me-4 mr-4">
             <i class="fab fa-instagram"></i>
-          </a>
-          <a href="" class="text-white me-4 mr-4">
-            <i class="fab fa-linkedin"></i>
-          </a>
-          <a href="" class="text-white me-4 mr-4">
-            <i class="fab fa-github"></i>
           </a>
         </section>
         <!-- Section: Social -->
@@ -435,14 +419,12 @@
            class="text-center p-3"
            style="background-color: rgba(0, 0, 0, 0.2)"
            >
-        © 2020 Copyright:
+        © 2021 Copyright:
         <a class="text-white" href="https://mdbootstrap.com/"
            >Privex</a
           >
       </div>
-      <!-- Copyright -->
     </footer>
-    <!-- Footer -->
   </div>
   <!-- End of .container -->    
     <!-- Js Plugins -->
@@ -451,54 +433,6 @@
     <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/jquery.slicknav.js"></script>
     <script src="js/main.js"></script>
-    <!-- <script>
-        $(function () {
-        $(document).scroll(function () {
-            var $nav = $(".header-section");
-            $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-        });
-});
-    </script> -->
-           <script>
-            function getTheme() {
-              return localStorage.getItem('theme') || 'light';
-            }
-            function saveTheme(theme) {
-              localStorage.setItem('theme', theme);
-            }
-
-            const colorScheme = document.querySelector('meta[name="color-scheme"]');
-            function applyTheme(theme) {
-              document.body.className = theme;
-              colorScheme.content = theme;
-            }
-
-            function rotateTheme(theme) {
-              if (theme === 'light') {
-                return 'dark'
-              }
-              return 'light';
-            }
-
-            const themeDisplay = document.getElementById('theme');
-            const themeToggler = document.getElementById('theme-toggle');
-
-            // Mimic heavy load done by other JS scripts
-            setTimeout(() => {
-              let theme = getTheme();
-              applyTheme(theme);
-              themeDisplay.innerText = theme;
-
-              themeToggler.onclick = () => {
-                const newTheme = rotateTheme(theme);
-                applyTheme(newTheme);
-                themeDisplay.innerText = newTheme;
-                saveTheme(newTheme);
-
-                theme = newTheme;
-              }
-            }, 100);
-        </script>
 </body>
 
 </html>
