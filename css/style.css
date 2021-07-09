@@ -113,8 +113,6 @@ ol {
 }
 
 .set-bg {
-	background-repeat: no-repeat;
-	background-position: top center;
     -webkit-animation: backgrounnd 5s cubic-bezier(1,0,0,1) infinite;
     animation: backgrounnd 20s infinite;  
 	
@@ -123,17 +121,25 @@ ol {
 @-webkit-keyframes backgrounnd {
 	0% { background: url('../img/a.svg');
 		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: top center;
 	}
-	33% { background: url('../img/b.svg'); background-size: cover }  
-	67% { background: url('../img/c.svg'); background-size: cover }
-	100% { background: url('../img/d.svg');background-size: cover }
+	33% { background: url('../img/b.svg'); background-size: cover;background-repeat: no-repeat;background-position: top center; }  
+	67% { background: url('../img/c.svg'); background-size: cover;background-repeat: no-repeat;
+		background-position: top center; }
+	100% { background: url('../img/d.svg');background-size: cover;background-repeat: no-repeat;
+		background-position: top center; }
   }
   
   @keyframes backgrounnd {
-	0% { background: url('../img/a.svg'); background-size: cover }
-	33% { background: url('../img/b.svg'); background-size: cover }  
-	67% { background: url('../img/c.svg'); background-size: cover }
-	100% { background: url('../img/d.svg'); background-size: cover }
+	0% { background: url('../img/a.svg'); background-size: cover;background-repeat: no-repeat;
+		background-position: top center; }
+	33% { background: url('../img/b.svg'); background-size: cover;background-repeat: no-repeat;
+		background-position: top center; }  
+	67% { background: url('../img/c.svg'); background-size: cover;background-repeat: no-repeat;
+		background-position: top center; }
+	100% { background: url('../img/d.svg'); background-size: cover;background-repeat: no-repeat;
+		background-position: top center; }
   }
 
 
