@@ -1,12 +1,8 @@
-@import url(https://fonts.googleapis.com/css?family=Exo+2:200i);
 
-:root {
-	/* Base font size */
-	font-size: 10px;   
-	
-	/* Set neon color */
-	--neon-text-color: #FF69B4;
-  }
+/*----------------------------------------*/
+
+/* Template default CSS
+/*----------------------------------------*/
 
 html,
 body {
@@ -15,6 +11,7 @@ body {
 	-webkit-font-smoothing: antialiased;
 	font-smoothing: antialiased;
 	background: #181818;
+	scroll-behavior: smooth;
 }
 
 h1,
@@ -111,7 +108,7 @@ ol {
 }
 
 .set-bg {
-	background: url("../img/3.png");
+	background: url('../img/swap.png');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: top center;
@@ -324,8 +321,8 @@ ol {
 -----------------------*/
 
 .hero-section {
-	padding-top: 300px;
-	padding-bottom: 150px;;
+	padding-top: 120px;
+	padding-bottom: 60px;;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -359,7 +356,8 @@ ol {
 -----------------------*/
 
 .about-us-section {
-	background: #191919;
+	background: url('../img/buy.png');
+	background-size: cover;
 }
 
 .as-pic img {
@@ -443,7 +441,7 @@ ol {
 	text-align: center;
 	background: #222222;
 	padding: 46px 50px 0;
-	height: 350px;
+	height: 325px;
 	-webkit-transition: all 0.3s;
 	-o-transition: all 0.3s;
 	transition: all 0.3s;
@@ -452,7 +450,6 @@ ol {
 
 .service-item:hover {
 	border-bottom: 3px solid #e32879;
-	margin-top: -10px;
 }
 
 .service-item h4 {
@@ -1638,102 +1635,23 @@ ol {
 	margin-bottom: 45px;
 }
 
-/*PRIVEX logo Neon */
-
-#symbol {
-	font-family: 'Exo 2', sans-serif;
-	font-style: italic;
-	color: #fff;
-	text-transform: uppercase;
-	animation: flicker 1.5s infinite alternate;     
-  }
-  
-  #symbol::-moz-selection {
-	background-color: var(--neon-border-color);
-	color: var(--neon-text-color);
-  }
-  
-  #symbol::selection {
-	background-color: var(--neon-border-color);
-	color: var(--neon-text-color);
-  }
-  
-  #symbol:focus {
-	outline: none;
-  }
-  
-  /* Animate neon flicker */
-  @keyframes flicker {
-    
-    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
-      
-        text-shadow:
-            -0.2rem -0.2rem 1rem #d3d3d3,
-            0.1rem 0.1rem 1rem #d3d3d3,
-            0 0 2rem var(--neon-text-color),
-            0 0 4rem var(--neon-text-color),
-            0 0 6rem var(--neon-text-color),
-            0 0 8rem var(--neon-text-color),
-            0 0 10rem var(--neon-text-color);
-        
-        box-shadow:
-            0 0 .1rem #fff,
-            inset 0 0 .5rem #fff,
-            0 0 1rem var(--neon-border-color),
-            inset 0 0 2rem var(--neon-border-color),
-            0 0 1rem var(--neon-border-color),
-            inset 0 0 1rem var(--neon-border-color);        
-    }
-    
-    20%, 24%, 55% {        
-        text-shadow: none;
-        box-shadow: none;
-    }    
-}
-
 /*-------------------------------- Respinsive Media Styles --------------------------------*/
 
 @media only screen and (min-width: 1600px) {
-	
-	.hero-section{
-		padding-top: 400;
-		padding-bottom: 400px;
-
-	}
-
 	.portfolio-section .container {
 		max-width: 1570px;
 	}
 }
 
 @media only screen and (min-width: 1200px) {
-
-	.hero-section{
-		padding-top: 300px;
-		padding-bottom: 300px;
-	}
-	
 	.container {
 		max-width: 1170px;
-	}
-}
-
-@media only screen and (max-width: 992px) {
-	.hero-section{
-		padding-top: 300px;
-		padding-bottom: 300px;
 	}
 }
 
 /* Medium Device: 1200px */
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-
-	.hero-section{
-		padding-top: 200px;
-		padding-bottom: 200px;
-	}
-
 	.member-item .mi-text {
 		padding: 30px 20px 60px 20px;
 	}
@@ -1751,7 +1669,47 @@ ol {
 }
 
 @media only screen and (max-width: 991px) {
+
+	#swap-head{
+		font-size: 35px;
+		text-align: center;
+		color: #fff
+	}
+
+	p.f-para{
+		font-size: 15px;
+		color: #fff;
+		font-weight: unset;
+	}
+
+	.swap-button{
+		display: block;
+		margin-bottom: 35px;
+		margin-top: 30px;
+		font-weight: unset;
+	}
+
+	.hero-section{
+		padding-top: 80px;
+	}
 	
+	.set-bg{
+		background: linear-gradient(-45deg, #181818, #121212, #e32879, #e73c7e);
+		background-size: 400% 400%;
+		animation: gradient 15s ease infinite;
+	}
+
+	@keyframes gradient {
+		0% {
+			background-position: 0% 50%;
+		}
+		50% {
+			background-position: 100% 50%;
+		}
+		100% {
+			background-position: 0% 50%;
+		}
+	}
 	.as-text {
 		padding-left: 0;
 	}
@@ -1790,8 +1748,7 @@ ol {
 		float: none;
 	}
 	.slicknav_nav {
-		margin-top: -15px;
-		background: #181818;
+		background: #666;
 		display: block;
 	}
 	.slicknav_menu {
@@ -1870,6 +1827,8 @@ ol {
 /* Small Mobile: 320px */
 
 @media only screen and (max-width: 479px) {
+
+
 	.blog-hero-section .bh-text h2 {
 		font-size: 36px;
 		line-height: normal;
