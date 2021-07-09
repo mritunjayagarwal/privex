@@ -229,14 +229,9 @@ ol {
 .header-section {
 	width: 100%;
 	z-index: 1;
-	position: fixed;
+	position: absolute;
 	top: 0;
 }
-
-.header-section.scrolled {
-	background-color: #181818 !important;
-	transition: background-color 200ms linear;
-  }
 
 .logo {
 	padding: 24px 0 30px;

@@ -256,7 +256,7 @@ ol {
 .header-section {
 	width: 100%;
 	z-index: 1;
-	position: fixed;
+	position: absolute;
 	top: 0;
 }
 
