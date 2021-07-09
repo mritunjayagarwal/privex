@@ -116,6 +116,7 @@ ol {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: top center;
+	transition: background 4s linear;
 }
 
 .spad {
