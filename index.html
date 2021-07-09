@@ -256,11 +256,15 @@
             }, 100);
         </script>
         <script type="text/javascript">
-            var images = ['a.jpeg', 'b.jpeg', 'c.jpeg'];
+        // if ($(window).width() < 1000) {
+            var images = ['a.svg', 'b.svg', 'c.svg', 'd.svg'];
             $('.set-bg').css({'background-image': 'url(../img/' + images[Math.floor(Math.random() * images.length)] + ')'});
             setInterval(function(){
                 $('.set-bg').css({'background-image': 'url(../img/' + images[Math.floor(Math.random() * images.length)] + ')'});
-            }, 2500);
+            }, 4500);
+        // } else {
+        //     $('.set-bg').css({'background-image': 'url(../img/d.svg'});
+        // }
         </script>
 </body>
 
