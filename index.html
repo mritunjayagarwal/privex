@@ -59,6 +59,7 @@
                             <li class="active"><a href="./index.html">Home</a></li>
                             <li><a href="./buyorswap.html">Buy</a></li>
                             <li><a href="./buyorswap.html#buy-section">Help</a></li>
+                            <li><a href="./about.html">About us</a></li>
                         </ul>
                     </div>
                 </div>
@@ -162,7 +163,7 @@
                     <div class="footer-option text-center">
                         <div class="fo-logo">
                             <a href="#">
-                                <img src="img/logo.png" style = "width: 50px;height: auto;" alt="">
+                                <img src="img/logo.png" style = "width: 100px;height: auto;" alt="">
                             </a>
                         </div>
                         <ul>
@@ -253,6 +254,13 @@
                 theme = newTheme;
               }
             }, 100);
+        </script>
+        <script type="text/javascript">
+            var images = ['3.png', 'buy.png'];
+            $('.set-bg').css({'background-image': 'url(../img/' + images[Math.floor(Math.random() * images.length)] + ')'});
+            setInterval(function(){
+                $('.set-bg').css({'background-image': 'url(../img/' + images[Math.floor(Math.random() * images.length)] + ')'});
+            }, 4000);
         </script>
 </body>
 
