@@ -255,23 +255,6 @@
               }
             }, 100);
         </script>
-        <script type="text/javascript">
-            function changebg(){
-
-                const images = [
-                    'url(../img/a.svg)',
-                    'url(../img/b.svg)',
-                    'url(../img/c.svg)',
-                    'url(../img/d.svg)'
-                ]
-
-                const section = document.querySelector('.set-bg');
-                const bg = images[Math.floor(Math.random() * images.length)];
-                section.style.backgroundImage = bg;
-            }
-
-            setInterval(changebg, 4000)
-        </script>
 </body>
 
 </html>

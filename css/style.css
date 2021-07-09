@@ -116,7 +116,25 @@ ol {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: top center;
+    -webkit-animation: backgrounnd 5s cubic-bezier(1,0,0,1) infinite;
+    animation: backgrounnd 20s cubic-bezier(1,0,0,1) infinite;  
+	
 }
+
+@-webkit-keyframes backgrounnd {
+	0% { background: url('../img/a.svg'); }
+	33% { background: url('../img/b.svg'); }  
+	67% { background: url('../img/c.svg'); }
+	100% { background: url('../img/d.svg'); }
+  }
+  
+  @keyframes backgrounnd {
+	0% { background: url('../img/a.svg'); }
+	33% { background: url('../img/b.svg'); }  
+	67% { background: url('../img/c.svg'); }
+	100% { background: url('../img/d.svg'); }
+  }
+
 
 .spad {
 	padding-top: 100px;
