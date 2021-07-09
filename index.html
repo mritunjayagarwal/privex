@@ -33,86 +33,22 @@
         border-radius: 10px;
         overflow: hidden;
         }
-        .carousel:hover {
-  cursor: move
-}
 
-.carousel-caption {
-  /*bottom: 20px; This is the defaul*/  
-  bottom: 25%;
-}
+        .btn-transparent {
+        color: #ffffff;
+        border: 2px solid #ffffff;
+        -webkit-border-radius: 35px;
+        -moz-border-radius: 35px;
+        border-radius: 35px;
+        }
 
-.carousel-fade .carousel-inner .item {
-  background-image: var(--background); 
-  background-position: center;
-  background-size: cover;
-  background-color: rgba(0, 0, 0, .5);
-  min-height: 450px;
-}
-
-.carousel-fade .carousel-inner .item:before {
-  background-color: inherit;
-  bottom: 0;
-  content: "";
-  left: 0;
-  opacity: .8;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-.carousel-fade .carousel-inner .item img{
-  display: none;
-}
-
-
-
-/*!
-* Change transition
-*/
-.carousel-fade .carousel-inner .item {
-   -webkit-transition-property: opacity;
-  -moz-transition-property: opacity;
-  -o-transition-property: opacity;
-  transition-property: opacity;
-}
-.carousel-fade .carousel-inner .item,
-.carousel-fade .carousel-inner .active.left,
-.carousel-fade .carousel-inner .active.right {
-  opacity: 0;
-}
-.carousel-fade .carousel-inner .active,
-.carousel-fade .carousel-inner .next.left,
-.carousel-fade .carousel-inner .prev.right {
-  opacity: 1;
-}
-.carousel-fade .carousel-inner .next,
-.carousel-fade .carousel-inner .prev,
-.carousel-fade .carousel-inner .active.left,
-.carousel-fade .carousel-inner .active.right {
-  left: 0;
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
-}
-.carousel-fade .carousel-control {
-  z-index: 2;
-}
-
-.btn-transparent {
-  color: #ffffff;
-  border: 2px solid #ffffff;
-  -webkit-border-radius: 35px;
-  -moz-border-radius: 35px;
-  border-radius: 35px;
-}
-
-.btn-transparent:hover {
-  color: #000000;
-  background-color: #ffffff;
-  -webkit-box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.75);
-}
+        .btn-transparent:hover {
+        color: #000000;
+        background-color: #ffffff;
+        -webkit-box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.75);
+        }
     </style>
 </head>
 
@@ -158,21 +94,20 @@
         </ol>
         <div class="carousel-inner" role="listbox">
             <!-- Slide One - Set the background image for this slide in the line below -->
-            <div class="carousel-item active" style="background-image: url('img/c.svg')">
+            <div class="carousel-item active" style="background-image: url('img/b.svg')">
                 <div class=" col-md-6 divleft-top">
     
                 </div>
             </div>
             <!-- Slide Two - Set the background image for this slide in the line below -->
-            <div class="carousel-item" style="background-image: url('img/b.svg');background-size: auto">
+            <div class="carousel-item" style="background-image: url('img/d.svg');background-size: auto">
                 <div class="col-md-6 divleft-top">
     
                 </div>
             </div>
-            <!-- Slide Three - Set the background image for this slide in the line below -->
-            <div class="carousel-item"
-                style="background-image: url('img/c.svg')">
+            <div class="carousel-item" style="background-image: url('img/a.svg');background-size: auto">
                 <div class="col-md-6 divleft-top">
+    
                 </div>
             </div>
         </div>
