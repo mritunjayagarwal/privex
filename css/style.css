@@ -112,37 +112,6 @@ ol {
 	margin-top: 14px;
 }
 
-.set-bg {
-    -webkit-animation: backgrounnd 16s infinite;
-    animation: backgrounnd 16s infinite;  
-	
-}
-
-@-webkit-keyframes backgrounnd {
-	0% { background: url('../img/a.svg');
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: top center;
-	}
-	33% { background: url('../img/b.svg'); background-size: cover;background-repeat: no-repeat;background-position: top center; }  
-	67% { background: url('../img/c.svg'); background-size: cover;background-repeat: no-repeat;
-		background-position: top center; }
-	100% { background: url('../img/d.svg');background-size: cover;background-repeat: no-repeat;
-		background-position: top center; }
-  }
-  
-  @keyframes backgrounnd {
-	0% { background: url('../img/a.svg'); background-size: cover;background-repeat: no-repeat;
-		background-position: top center; }
-	33% { background: url('../img/b.svg'); background-size: cover;background-repeat: no-repeat;
-		background-position: top center; }  
-	67% { background: url('../img/c.svg'); background-size: cover;background-repeat: no-repeat;
-		background-position: top center; }
-	100% { background: url('../img/d.svg'); background-size: cover;background-repeat: no-repeat;
-		background-position: top center; }
-  }
-
-
 .spad {
 	padding-top: 100px;
 	padding-bottom: 100px;
@@ -351,13 +320,25 @@ ol {
 
 .hero-section {
 	padding-top: 300px;
-	padding-bottom: 150px;;
+	padding-bottom: 150px;
+	height: 100%;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-align: center;
 	-ms-flex-align: center;
 	align-items: center;
+	z-index: 1
+}
+
+.carousel-item {
+	height: 100vh;
+	min-height: 350px;
+	background: no-repeat center center scroll;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 .hs-text span {
@@ -1668,6 +1649,7 @@ ol {
 
 #symbol {
 	font-family: 'Exo 2', sans-serif;
+	margin-bottom: 20px;
 	font-style: italic;
 	color: #fff;
 	text-transform: uppercase;
