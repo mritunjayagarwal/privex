@@ -1728,6 +1728,11 @@ ol {
 }
 
 @media only screen and (max-width: 992px) {
+
+	#symbol{
+		font-size: 80px;
+	}
+
 	.hero-section{
 		padding-top: 300px;
 		padding-bottom: 300px;
