@@ -113,8 +113,8 @@ ol {
 }
 
 .set-bg {
-    -webkit-animation: backgrounnd 5s cubic-bezier(1,0,0,1) infinite;
-    animation: backgrounnd 20s infinite;  
+    -webkit-animation: backgrounnd 16s infinite;
+    animation: backgrounnd 16s infinite;  
 	
 }
 
