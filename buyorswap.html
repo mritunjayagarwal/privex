@@ -96,7 +96,6 @@
     </section>
     <!-- Hero Section End -->
 
-    <!-- About Us Section Begin -->
     <section class="about-us-section spad" id = "buy">
         <div class="container">
             <div class="row justify-content-center align-items-center">
@@ -116,7 +115,6 @@
                         </div>
                         <p class="f-para text-white" style = "font-size: 17px;">Instantly buy your favourite cryptocurrency</p>
                         <p class="f-para text-white mb-3" style = "font-size: 17px;">without leaving Privex's website using onramper</p>
-                        <!-- <a href="#" class="primary-btn">Read More</a> -->
                     </div>
                 </div>
             </div>
@@ -254,74 +252,19 @@
       <!-- Copyright -->
       <div
            class="text-center p-3"
-           style="background-color: rgba(0, 0, 0, 0.2)"
+           style="background-color: rgba(0, 0, 0, 0.2);font-size: 15px;"
            >
-        © 2021 Copyright:
-        <a class="text-white" href="./index.html"
-           >Privex</a
+        Made with <i class = "fa fa-heart" style = "color: red"></i> by
+        <a class = "text-white" href="https://dijininjas.in"
+           >Dijininjas.in</a
           >
       </div>
     </footer>
   </div>
-  <!-- End of .container -->  
-    <!-- Footer Section End -->
-
-    <!-- Js Plugins -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/mixitup.min.js"></script>
     <script src="js/jquery.slicknav.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
-    <script>
-        $(function () {
-        $(document).scroll(function () {
-            var $nav = $(".header-section");
-            $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-        });
-});
-    </script>
-           <script>
-            function getTheme() {
-              return localStorage.getItem('theme') || 'light';
-            }
-            function saveTheme(theme) {
-              localStorage.setItem('theme', theme);
-            }
-
-            const colorScheme = document.querySelector('meta[name="color-scheme"]');
-            function applyTheme(theme) {
-              document.body.className = theme;
-              colorScheme.content = theme;
-            }
-
-            function rotateTheme(theme) {
-              if (theme === 'light') {
-                return 'dark'
-              }
-              return 'light';
-            }
-
-            const themeDisplay = document.getElementById('theme');
-            const themeToggler = document.getElementById('theme-toggle');
-
-            // Mimic heavy load done by other JS scripts
-            setTimeout(() => {
-              let theme = getTheme();
-              applyTheme(theme);
-              themeDisplay.innerText = theme;
-
-              themeToggler.onclick = () => {
-                const newTheme = rotateTheme(theme);
-                applyTheme(newTheme);
-                themeDisplay.innerText = newTheme;
-                saveTheme(newTheme);
-
-                theme = newTheme;
-              }
-            }, 100);
-        </script>
 </body>
 
 </html>

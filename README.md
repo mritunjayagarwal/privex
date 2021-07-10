@@ -1,1 +1,0 @@
-https://dev.to/ayc0/light-dark-mode-avoid-flickering-on-reload-1567 - dark mode with cookie
