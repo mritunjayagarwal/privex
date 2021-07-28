@@ -34,7 +34,7 @@
               countdown = document.getElementById("countdown"),
               content = document.getElementById("content");
 
-          headline.innerText = "PRIVEX LAUNCH DATE";
+          headline.innerText = "The Sale is Live Now!";
           countdown.style.display = "none";
           content.style.display = "block";
 
