@@ -849,3 +849,66 @@ ol {
         display: none;
     }
 }
+
+/* Countdown */
+
+.countdown{
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	background-color: #121212;
+	display: flex;
+	font-family: -apple-system, 
+	  BlinkMacSystemFont, 
+	  "Segoe UI", 
+	  Roboto, 
+	  Oxygen-Sans, 
+	  Ubuntu, 
+	  Cantarell, 
+	  "Helvetica Neue", 
+	  sans-serif;
+}
+
+.container {
+  color: #d3d3d3;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.countdown li {
+	display: inline-block;
+	font-size: 1.5em;
+	list-style-type: none;
+	padding: 1em;
+	text-transform: uppercase;
+  }
+  
+.countdown li span {
+	display: block;
+	font-size: 4.5rem;
+  }
+  
+.countdown .emoji {
+	display: none;
+	padding: 1rem;
+  }
+  
+.countdown .emoji span {
+	font-size: 4rem;
+	padding: 0 .5rem;
+  }
+  
+  @media all and (max-width: 768px) {
+	.countdown h1 {
+	  font-size: 1.5rem;
+	}
+	
+	.countdown li {
+	  font-size: 1.125rem;
+	  padding: .75rem;
+	}
+	
+	.countdown li span {
+	  font-size: 3.375rem;
+	}
+  }
