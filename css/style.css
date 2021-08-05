@@ -906,3 +906,12 @@ h1 {
   color: #fff;
   font-size: 4em;
 }
+
+.partner-img{
+	filter: grayscale(100%);
+}
+
+.partner-img:hover{
+	filter: none;
+	transition: 0.3s;
+}
