@@ -805,6 +805,11 @@ ol {
 }
 
 @media (max-width: 992px) {
+
+	.dex{
+		height: 100px;
+	}
+
     .timeline {
         padding: 15px;
     }
@@ -914,4 +919,9 @@ h1 {
 .partner-img:hover{
 	filter: none;
 	transition: 0.3s;
+}
+
+.dex{
+	height: 50px;
+	width: 90%;
 }
